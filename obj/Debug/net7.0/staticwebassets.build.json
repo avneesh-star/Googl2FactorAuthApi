@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4UGYya1z+qigRMhAUd3oXnuFyyzrQhlI+BOGxUN3od8=",
+  "Source": "google2fa.API",
+  "BasePath": "_content/google2fa.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
