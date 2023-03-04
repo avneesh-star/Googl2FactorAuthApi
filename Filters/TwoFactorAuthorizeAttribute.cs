@@ -18,7 +18,7 @@ namespace google2fa.API.Filters
 
         public void OnResourceExecuted(ResourceExecutedContext context)
         {
-            //throw new NotImplementedException();
+
         }
 
         public void OnResourceExecuting(ResourceExecutingContext context)
@@ -32,7 +32,7 @@ namespace google2fa.API.Filters
             .FirstOrDefault();
             if (string.IsNullOrEmpty(SecretKey))
             {
-                context.Result = new OkObjectResult(new Response(false, "invalid otp"));
+                context.Result = new OkObjectResult(new Response(false, "invalid key"));
                 return;
             }
             bool IsValidOtp = context.HttpContext.Request.HasValidTotp(SecretKey);
